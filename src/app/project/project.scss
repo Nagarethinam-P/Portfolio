@@ -1,0 +1,163 @@
+//header-page
+.header-page{
+  margin: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+}
+.center-content {
+  display: flex;
+  flex-direction: row;       /* Horizontal layout */
+  align-items: center;
+  border: 2px solid   #734F96;
+  padding: 15px 20px;
+  border-radius: 50px;       /* Rounded corners */
+  background-color: #B57EDC;
+}
+.image {
+  width: 60px;              /* Resize image */
+  height: 50px;
+  border-radius: 100px;
+}
+.portfolio-heading {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #4B0082;
+}
+.nav-bars{
+  padding-top: 35px;
+  padding-left: 150px;
+  font-family: 'Poppins', sans-serif;
+}
+.nav-bars a{
+  padding-right: 25px;
+  text-decoration:none;
+  color: #4B0082;
+  padding-left: 25px;
+}
+.nav-bars a:hover{
+  cursor: pointer;
+  border-radius: 6px;
+  color: #B57EDC;
+}
+.btn-rounded{
+  width: 250px;
+  height: 50px;
+}
+.call-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.call-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #28a745;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+.call-button:hover {
+  background-color: #218838;
+}
+.phone-icon {
+  font-size: 24px;
+}
+
+
+
+//landing page
+.project-page{
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    font-family: 'Poppins', sans-serif;
+    height: 2675px;
+}
+.project-heading{
+    color: black;
+    margin-bottom: 10px;
+    padding-top: 50px;
+    margin-left: 550px;
+  }
+  .project{
+  margin-left: 100px;
+  margin-right: 100px;
+  color: black;
+}
+
+
+//naan mudhalvan
+h2{
+  color:  #4B0082;
+  padding-left: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+h5{
+  color: #B57EDC;
+}
+.video{
+  margin-left: 200px;
+}
+.NM-title{
+  margin-left: 375px;
+  padding-top: 100px;
+  color: black;
+}
+h4{
+  color:  #4B0082;
+  margin-left: 475px;
+  font-weight: bold;
+}
+p{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.video-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-left: 300px;
+}
+
+.video-container video {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.playlist {
+  max-width: 525px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.playlist ul {
+  list-style: none;
+  padding: 0;
+}
+
+.playlist li {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: #ffffff;
+  transition: background 0.2s;
+  width: 500px;
+}
+
+.playlist li:hover,
+.playlist li.active {
+  background-color: #d0d0ff;
+  font-weight: bold;
+}

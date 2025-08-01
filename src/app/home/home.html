@@ -1,0 +1,53 @@
+<!-- header-page -->
+<div class="header-page">
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-2 center-content">
+            <img src="portfolio-logo-design.jpg" class="image" alt="Portfolio Logo">
+            <h1 class="portfolio-heading"><strong>Portfolio </strong></h1>
+        </div>
+        <div class="col-9 nav-bars">
+            <a routerLink="/"><strong>Home</strong></a>
+            <a routerLink="/about"><strong>About</strong></a>
+            <a href="/skills"><strong>Skills</strong></a>
+            <a href="/project"><strong>Project</strong></a>
+            <a href="/internship"><strong>Internship</strong></a>
+            <a href="/certification"><strong>Certification</strong></a>
+        </div>
+        <div class="col-1 call-container">
+            <a [href]="'tel:' + phoneNumber" class="call-button" aria-label="Call">
+                <i class="phone-icon">📞</i><!-- Unicode Phone Symbol -->
+            </a>
+          </div>
+    </div>
+    </div>
+</div>
+
+
+
+<!-- landing page -->
+<div class="landing">
+    <div class="container-fluid">
+    <div class="row landing-page">
+        <div class="col-6">
+            <h1 class="heading"><b>Hey!, I'm</b> <br><b class="name">Nagarethinam</b></h1>
+            <p class="para">this is a multi-purpose responsive layout created <br>
+                    with bootstrap v5. (here your can place your <br>description text)</p>
+                
+                    resume button
+             <div class="home-container">
+               <button class="btn-resume" (click)="goToResume()">
+                  📄 View My Resume
+                </button>
+             </div>
+            </div>
+        <div class="col-6">
+            <img src="My pic.jpg" class="image-1">
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+

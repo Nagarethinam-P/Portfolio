@@ -1,0 +1,61 @@
+<!-- header-page -->
+<div class="header-page">
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-2 center-content">
+            <img src="portfolio-logo-design.jpg" class="image" alt="Portfolio Logo">
+            <h1 class="portfolio-heading"><strong>Portfolio </strong></h1>
+        </div>
+        <div class="col-9 nav-bars">
+            <a routerLink="/"><strong>Home</strong></a>
+            <a routerLink="/about"><strong>About</strong></a>
+            <a href="/skills"><strong>Skills</strong></a>
+            <a href="/project"><strong>Project</strong></a>
+            <a href="/internship"><strong>Internship</strong></a>
+            <a href="/certification"><strong>Certification</strong></a>
+          </div>
+        <div class="col-1 call-container">
+            <a [href]="'tel:' + phoneNumber" class="call-button" aria-label="Call">
+                <i class="phone-icon">📞</i><!-- Unicode Phone Symbol -->
+            </a>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+<!-- landing page -->
+<div class="cert-page">
+    <h1 class="cert-heading">🏅Certification</h1>
+    
+<!-- First Row: 3 Cards -->
+  <h2>Internship Certificates</h2>
+<div class="certificate-row row-1">
+  <div class="certificate-card" *ngFor="let cert of certificatesRow1">
+    <img [src]="cert.imageUrl" alt="{{ cert.title }}" class="cert-image" />
+    <div class="cert-content">
+      <h3>{{ cert.title }}</h3>
+      <p>{{ cert.provider }} ({{ cert.year }})</p>
+      <a [href]="cert.downloadLink" target="_blank" class="cert-view">
+        View Certificate
+      </a>
+    </div>
+  </div>
+</div>
+  
+  <!-- Second Row: 2 Cards -->
+   <h2>Naan mudhalvan certificates</h2>
+  <div class="certificate-row row-2">
+    <div class="certificate-card" *ngFor="let cert of certificatesRow2">
+      <img [src]="cert.imageUrl" alt="{{ cert.title }}" class="cert-image" />
+      <div class="cert-content">
+        <h3>{{ cert.title }}</h3>
+        <p>{{ cert.provider }} ({{ cert.year }})</p>
+        <a [href]="cert.downloadLink" target="_blank" class="cert-view">
+        View Certificate
+      </a>
+      </div>
+    </div>
+  </div>
+</div>

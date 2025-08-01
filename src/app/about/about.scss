@@ -1,0 +1,217 @@
+//header-page
+.header-page{
+  margin: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+}
+.center-content {
+  display: flex;
+  flex-direction: row;       /* Horizontal layout */
+  align-items: center;
+  border: 2px solid   #734F96;    /* Border around the box */
+  padding: 15px 20px;
+  border-radius: 50px;       /* Rounded corners */
+  background-color: #B57EDC;
+ }
+.image {
+  width: 60px;              /* Resize image */
+  height: 50px;
+  border-radius: 100px;
+}
+.portfolio-heading {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #4B0082;
+}
+.nav-bars{
+  padding-top: 35px;
+  padding-left: 150px;
+  font-family: 'Poppins', sans-serif;
+}
+.nav-bars a{
+  padding-right: 25px;
+  text-decoration:none;
+  color: #4B0082;
+  padding-left: 25px;
+}
+.nav-bars a:hover{
+  cursor: pointer;
+  border-radius: 6px;
+  color: #B57EDC
+}
+.btn-rounded{
+  width: 250px;
+  height: 50px;
+}
+.call-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.call-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #28a745;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+.call-button:hover {
+  background-color: #218838;
+}
+.phone-icon {
+  font-size: 24px;
+}
+
+
+
+//landing-page-----about page
+.about-page{
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  height: 1000px;
+  font-family: 'Poppins', sans-serif;
+}
+.about-heading{
+    color: black;
+    margin-bottom: 10px;
+    padding-top: 50px;
+    margin-left: 550px;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center; /* Vertically align text and image */
+  gap: 20px;            /* Space between text and image */
+}
+
+.my-photo {
+  width: 200px;   /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%; /* Optional: Make image circular */
+  margin-left: 100px;
+}
+.name{
+  margin-left: 150px;
+  margin-top: 30px;
+  font-size: 70px;
+  font-family: 'Poppins', sans-serif;
+  color: #867e7e;
+}
+.myname{
+  color:  #4B0082;
+}
+.about-para{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 150px;
+  margin-right: 100px;
+  padding-top: 50px;
+  color: #867e7e;
+  font-size: larger;
+}
+.bold-words{
+  color: #B57EDC;
+}
+
+
+//education-page
+.education-page{
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  font-family: 'Poppins', sans-serif;
+  margin: 50px;
+  height: 750px;
+  border-radius: 10px;
+}
+
+.edu-heading {
+    color: black;
+    margin-bottom: 10px;
+    padding-top: 50px;
+    margin-left: 450px;
+  }
+.edu-item {
+    background-color: #f9f9f9;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-left: 4px solid #4B0082;
+    border-radius: 6px;
+    // width: 1000px;
+    margin-left: 125px;
+    margin-right: 100px;
+    margin-top: 50px;
+    
+
+  }
+  .edu-item:hover {
+    animation: floatUpDown 1s ease-in-out infinite;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  }
+  
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-25px);
+    }
+  }
+  h3{
+    color:   #734F96;
+  }
+
+
+  //contact-page
+  .contact-page{
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    height: 525px;
+  }
+  .con-heading{
+    padding-top: 50px;
+    margin-left: 550px;
+  }
+  .contact-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #a18cd1, #fbc2eb); /* Modern lavender gradient */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .contact-container h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  .contact-info {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .contact-info a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .contact-info a:hover {
+    color: #320c57; /* Dark lavender on hover */
+  }
+  
+
