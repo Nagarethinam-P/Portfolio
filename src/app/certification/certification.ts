@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './certification.scss'
 })
 export class Certification {
-  phoneNumber: string = '7010443723';
   certificatesRow1 = [
     {
       title:'Python Programming',
@@ -40,6 +39,13 @@ export class Certification {
       year: '2023–2024',
       imageUrl: 'software testing cer.jpg',
       downloadLink: 'software testing cer.jpg'
+    },
+    {
+      title: 'Naalayathiran IBM Skillsbuild',
+      provider: 'Naan Mudhalvan',
+      year: ' 2023–2024',
+      imageUrl: 'IBM cer.jpg',
+      downloadLink: 'IBM cer.jpg'
     },
     {
       title: 'Network Essentials',

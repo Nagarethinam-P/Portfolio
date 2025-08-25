@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './internship.scss'
 })
 export class Internship {
-  phoneNumber: string = '7010443723';
-
   internships = [
     {
       title: 'Full Stack Web Development Intern',

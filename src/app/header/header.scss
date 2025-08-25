@@ -1,0 +1,320 @@
+@media only screen and (min-width: 1200px) {
+  .ddview {
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .header-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #734F96;
+    padding: 15px 20px;
+    border-radius: 50px;
+    background-color: #B57EDC;
+  }
+
+  .col-2 {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+  }
+
+  .portfolio-heading {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #4B0082;
+  }
+
+  .nav-bars {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .nav-bars a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #4B0082;
+    transition: color 0.3s;
+  }
+
+  .nav-bars a:hover {
+    color: #B57EDC;
+  }
+
+  .call-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+  .call-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #28a745;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+    color: white;
+  
+}
+
+  .call-button:hover {
+    background-color: #218838;
+  }
+
+  .mbview {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  .mbview {
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .header-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     height: 50px;
+    //justify-content: center;
+   // padding: 5px 10px;
+    //background-color: #B57EDC;
+    //border: 2px solid #734F96;
+    //border-radius: 50px;
+   //width: auto;
+    //margin-left: 50px;
+    //margin-top: 5px;
+  }
+
+  .image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .portfolio-heading {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #4B0082;
+    margin: 0;
+  }
+
+  .hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    z-index: 1001;
+  }
+
+  .nav-bars {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1000;
+    min-width: 200px;
+  }
+
+  .nav-bars a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #4B0082;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 3px solid #eee;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  }
+
+  .nav-bars a:hover {
+    background: #00d4ff;
+    color: #fff;
+    border-color: #734F96;
+  }
+
+  .nav-bars.show {
+    display: flex;
+  }
+  .call-container {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+  }
+
+.nav-bars .call-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+ .nav-bars .call-button:hover {
+  background-color: #218838;
+  }
+
+  .ddview {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .mbview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  }
+  
+  .logo-1 {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    //gap: 10px;
+   // padding: 5px 10px;
+    // background-color: #B57EDC;
+    // border: 2px solid #734F96;
+    // border-radius: 50px;
+  }
+
+  .image {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+  }
+
+  .portfolio-heading {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #4B0082;
+    margin: 0;
+  }
+
+  .hamburger {
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 1001;
+    position: absolute;
+    top: 15px;
+    right: 50px;   
+  }
+
+  .nav-bars {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    width: 180px;
+    background: #fff;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+
+  .nav-bars a {
+    padding: 8px;
+    text-decoration: none;
+    color: #4B0082;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-bars a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-bars a:hover {
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    color: #734F96;
+    border-radius: 5px;
+  }
+
+  .nav-bars.show {
+    display: flex;
+  }
+
+  .call-container {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+  }
+
+  .nav-bars .call-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        margin-top: 10px;
+        border-radius: 8px;
+        background-color: #28a745;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+    
+      .nav-bars .call-button:hover {
+        background-color: #218838;
+      }
+
+   .ddview {
+    display: none;
+  }
+}
+
+

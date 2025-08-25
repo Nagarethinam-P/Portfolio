@@ -1,52 +1,27 @@
-<!-- header-page -->
-<div class="header-page">
-    <div class="container-fluid">
+<!-- internship-->
+<div class="inter">
+  <div class="container">
     <div class="row">
-        <div class="col-2 center-content">
-            <img src="portfolio-logo-design.jpg" class="image" alt="Portfolio Logo">
-            <h1 class="portfolio-heading"><strong>Portfolio </strong></h1>
-        </div>
-        <div class="col-9 nav-bars">
-            <a routerLink="/"><strong>Home</strong></a>
-            <a routerLink="/about"><strong>About</strong></a>
-            <a href="/skills"><strong>Skills</strong></a>
-            <a href="/project"><strong>Project</strong></a>
-            <a href="/internship"><strong>Internship</strong></a>
-            <a href="/certification"><strong>Certification</strong></a>
+      <div class="col-12 internship-page">
+        <h1 class="internship-heading">💼 Internship / Course</h1>
+        <div class="timeline-section">
+          <h2>Internships</h2>
+          <div class="timeline-row">
+            <div class="timeline-item" *ngFor="let internship of internships; let i = index" [class.hidden]="i >= 3">
+              <div class="timeline-content">
+                <h3>{{ internship.title }}</h3>
+                <p><strong>Company:</strong> {{ internship.company }}</p>
+                <p><strong>Duration:</strong> {{ internship.period }}</p>
+              </div>
+            </div>
           </div>
-        <div class="col-1 call-container">
-            <a [href]="'tel:' + phoneNumber" class="call-button" aria-label="Call">
-                <i class="phone-icon">📞</i><!-- Unicode Phone Symbol -->
-            </a>
         </div>
-    </div>
-    </div>
-</div>
-
-
-
-<!-- landing page internship-->
-<div class="internship-page">
-  <h1 class="internship-heading">💼 Internship / Course</h1>
-
-  <div class="timeline-section">
-    <h2 class="intern">Internships</h2>
-    <div class="timeline-row">
-      <div class="timeline-item" *ngFor="let internship of internships; let i = index" [class.hidden]="i >= 3">
-        <div class="timeline-content">
-          <h3>{{ internship.title }}</h3>
-          <p><strong>Company:</strong> {{ internship.company }}</p>
-          <p><strong>Duration:</strong> {{ internship.period }}</p>
-        </div> 
       </div>
-    </div>
- <hr> 
-    
+      <hr>
 
-     
-     <!-- course -->
-     <div class="fullstack-container">
-        <h2 class="full-stack">Full Stack Web Development Course</h2>
+      <!-- course -->
+      <div class="col-12 fullstack-container">
+        <h2>Full Stack Web Development Course</h2>
         <div class="fullstack-card">
           <h3>{{ course.title }}</h3>
           <p><strong>Provider:</strong> {{ course.provider }}</p>
@@ -55,26 +30,24 @@
           <p><strong>Technologies:</strong> {{ course.technologies.join(', ') }}</p>
         </div>
       </div>
-      <hr>  
-      
-      
-      
+      <hr>
+
       <!-- naan mudhalvan courses -->
-      <div class="timeline-section-1">
-        <h2 class="NM-course">Naan Mudhalvan Courses</h2>
-        <div class="timeline-vertical">
-          <div class="timeline-item-vertical animate-item" *ngFor="let course of courses">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>{{ course.title }}</h3>
-              <p><strong>Provider:</strong> {{ course.provider }}</p>
-              <p><strong>Year:</strong> {{ course.year }}</p>
+      <div class="col-12 nm-page">
+        <div class="timeline-section">
+          <h2>Naan Mudhalvan Courses</h2>
+          <div class="timeline-vertical">
+            <div class="timeline-item-vertical animate-item" *ngFor="let course of courses">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>{{ course.title }}</h3>
+                <p><strong>Provider:</strong> {{ course.provider }}</p>
+                <p><strong>Year:</strong> {{ course.year }}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
-      
-      
-</div>
+    </div>
+  </div>
 </div>

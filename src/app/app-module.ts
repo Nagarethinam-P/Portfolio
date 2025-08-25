@@ -12,6 +12,7 @@ import { Internship } from './internship/internship';
 import { Certification } from './certification/certification';
 
 import { Resume } from './resume/resume';
+import { Header } from './header/header';
 
 
 
@@ -26,7 +27,8 @@ import { Resume } from './resume/resume';
     Internship,
     Certification,
     
-    Resume
+    Resume,
+          Header
   ],
   imports: [
     BrowserModule,

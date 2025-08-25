@@ -1,114 +1,103 @@
-<!-- header-page -->
-<div class="header-page">
-    <div class="container-fluid">
-    <div class="row">
-        <div class="col-2 center-content">
-           <img src="portfolio-logo-design.jpg" class="image" alt="Portfolio Logo">
-            <h1 class="portfolio-heading"><strong>Portfolio </strong></h1>
-        </div>
-        <div class="col-9 nav-bars">
-            <a routerLink="/"><strong>Home</strong></a>
-            <a routerLink="/about"><strong>About</strong></a>
-            <a href="/skills"><strong>Skills</strong></a>
-            <a href="/project"><strong>Project</strong></a>
-            <a href="/internship"><strong>Internship</strong></a>
-            <a href="/certification"><strong>Certification</strong></a>
-          </div>
-        <div class="col-1 call-container">
-            <a [href]="'tel:' + phoneNumber" class="call-button" aria-label="Call">
-                <i class="phone-icon">📞</i><!-- Unicode Phone Symbol -->
-            </a>
-        </div>
-    </div>
-    </div>
-</div>
-
-
-
 <!-- landing-page -->
-<div class="about-page">
-    <h1 class="about-heading"> 👨‍💻About me</h1>
-    <div class="intro-container">
-        <h1 class="name">
-          <b>Hi, I'm</b> <strong class="myname"> Nagarethinam!</strong>
-        </h1>
+<div class="container">
+  <div class="row">
+    <div class="col-12 about-page">
+      <h1> 👨‍💻About me</h1>
+      <div class="intro-container">
+        <h1 class="name"><strong>Hi, I'm<span> Nagarethinam!</span></strong></h1>
         <img src="My pic.jpg" alt="my photo" class="my-photo">
       </div>
-      
-    <p class="about-para">I'm a passionate and driven <b class="bold-words">Full Stack Web Developer and App Developer</b>
-        based in <b class="bold-words">Pudhukkottai, Tamil Nadu</b>. I hold a degree in <b class="bold-words">BE.Computer Science and Engineering
-        </b>and specialize in building responsive, user-friendly web and mobile applications. As a
-        fresher, I bring a solid foundation in development along with a strong desire to learn and 
-        grow in a real-world environment. <br>
 
-        <br>My technical skills include <b class="bold-words"> HTML, CSS, Bootstrap, JavaScript, Angular, MySQL,</b> and 
-        <b class="bold-words">C#</b>. I enjoy working on both front-end and back-end development, with a focus on 
-        writing clean, efficient code and delivering smooth user experiences. I'm enthusiastic about
-         using technology to solve real-world problems and continuously expand my knowledge through 
-         new tools, frameworks, and best practices. <br>
+      <div class="bottom-align">
+        <p class="about-para">I'm a passionate and driven <span><strong>Full Stack Web Developer
+              and App Developer</strong></span>based in <span><strong>Pudhukkottai, Tamil Nadu</strong></span>.
+          I hold a degree in <span><strong>BE.Computer Science and Engineering</strong></span>and
+          specialize in building responsive, user-friendly web and mobile applications. As a fresher,
+          I bring a solid foundation in development along with a strong desire to learn and
+          grow in a real-world environment. <br>
 
-         <br>I’m currently seeking a <b class="bold-words">full-time role or internship opportunity</b> in any 
-         Full Stack–related position, <b class="bold-words">such as Full Stack Web Developer, App Developer, 
-         Front-End Developer, Back-End Developer,</b> or <b class="bold-words">Software Developer.</b> I aim to
-          contribute to impactful projects, collaborate with experienced teams, and continue learning 
-          and growing as a developer. <br>
+          <br>My technical skills include <span><strong> HTML, CSS, Bootstrap, JavaScript, Angular,
+              MySQL,and c#</strong></span>. I enjoy working on both front-end and back-end
+          development, with a focus on writing clean, efficient code and delivering smooth user
+          experiences. I'm enthusiastic about using technology to solve real-world problems and
+          continuously expand my knowledge through new tools, frameworks, and best practices. <br>
 
-        <br>Outside of coding, I enjoy <b class="bold-words">drawing, reading books, cycling,</b> and <b>listening to music</b>,
-        which help fuel my creativity and maintain a healthy work-life balance. <br>
-    </p>
-</div>  
+          <br>I’m currently seeking a <span><strong>full-time role or internship opportunity</strong></span>>
+          in any Full Stack–related position, <span><strong>such as Full Stack Web Developer,
+              App Developer, Front-End Developer, Back-End Developer,</strong></span> or <span><strong>
+              Software Developer.</strong></span> I aim to contribute to impactful projects,
+          collaborate with experienced teams, and continue learning and growing as a developer. <br>
 
-<!-- education-page -->
-<div class="education-page">
-    <h1 class="edu-heading">🎓 Education</h1>
-    <div class="edu-item">
-      <h3><strong>BE-Computer Science and Engineering</strong></h3>
-      <p><strong>Institution:</strong> KIT and KIM Technical Campus, Affiliated to Anna University, Karaikudi</p>
-      <p><strong>Year:</strong> 2021 – 2025</p>
-    </div>
- 
-    <div class="edu-item">
-      <h3><strong>HSC(80.16%)</strong> </h3>
-      <p><strong>School:</strong> SMS.Higher Secondary school, Keelasivalpatti</p>
-      <p><strong>Year:</strong> 2019 – 2021</p>
-    </div>
-  
-    <div class="edu-item">
-      <h3><strong>SSLC (74.4%)</strong></h3>
-      <p><strong>School:</strong> SMS.Higher Secondary school, Keelasivalpatti</p>
-      <p><strong>Year:</strong> Completed in 2019</p>
-    </div>
-</div>
-
-
-<!-- contact page -->
-<div class="contact-page">
-    <h1 class="con-heading">📞Contact</h1>
-    <div class="contact-container">
-      <h2>Contact Me</h2>
-    
-      <div class="contact-info">
-        <p><strong>📞 Mobile:</strong> 
-          <a href="tel:+917010443723">+91 7010443723</a>
+          <br>Outside of coding, I enjoy <span><strong>drawing, reading books, cycling,</strong></span> and
+          <span><strong>listening to music</strong></span>,which help fuel my creativity and
+          maintain a healthy work-life balance. <br>
         </p>
-        <p>
-          <strong>📧 Email:</strong>
-          <a [href]="'mailto:' + email">{{ email }}</a>
-        </p>
-        
-        <p><strong>🔗 LinkedIn:</strong> 
-          <a href="https://www.linkedin.com/in/nagarethinam-p/" target="_blank">
+      </div>
+    </div>
+
+    <!-- education-page -->
+    <div class="col-12 education-page">
+      <h1>🎓 Education</h1>
+      <div class="edu-box">
+        <div class="edu-item">
+          <h3><strong>BE-Computer Science and Engineering</strong></h3>
+          <p><strong>Institution:</strong> KIT and KIM Technical Campus,Affiliated to Anna University, Karaikudi</p>
+          <p><strong>Year:</strong> 2021 – 2025</p>
+        </div>
+      </div>
+
+      <div class="edu-box">
+        <div class="edu-item">
+          <h3><strong>HSC(80.16%)</strong> </h3>
+          <p><strong>School:</strong> SMS.Higher Secondary school, Keelasivalpatti</p>
+          <p><strong>Year:</strong> 2019 – 2021</p>
+        </div>
+      </div>
+
+      <div class="edu-box">
+        <div class="edu-item">
+          <h3><strong>SSLC(74.4%)</strong></h3>
+          <p><strong>School:</strong> SMS.Higher Secondary school, Keelasivalpatti</p>
+          <p><strong>Year:</strong> Completed in 2019</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- contact page -->
+    <div class="col-12 contact-page">
+      <h1>📞Contact</h1>
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+
+        <div class="contact-info">
+          <p><strong>📞 Mobile:</strong>
+            <a href="tel:+917010443723">+91 7010443723</a>
+          </p>
+        </div>
+
+        <div class="contact-info">
+          <p><strong>📧 Email:</strong>
+            <a [href]="'mailto:' + email">{{ email }}</a>
+          </p>
+        </div>
+
+        <div class="contact-info">
+          <p><strong>🔗 LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/nagarethinam-p/" target="_blank">
               https://www.linkedin.com/in/nagarethinam-p/
-          </a>
-        </p>
-        <p><strong>💻 GitHub:</strong> 
-          <a href="https://github.com/Nagarethinam-P" target="_blank">
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-info">
+          <p><strong>💻 GitHub:</strong>
+            <a href="https://github.com/Nagarethinam-P" target="_blank">
               https://github.com/Nagarethinam-P
-          </a>
-        </p>
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  
-    
-  
+</div>

@@ -1,36 +1,17 @@
-<!-- header-page -->
-<div class="header-page">
-    <div class="container-fluid">
-    <div class="row">
-        <div class="col-2 center-content">
-            <img src="portfolio-logo-design.jpg" class="image" alt="Portfolio Logo">
-            <h1 class="portfolio-heading"><strong>Portfolio </strong></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-12 skills-page">
+      <h1 class="skills-heading">🌐My Skills</h1>
+      <div class="skills">
+        <div class="s">
+          <div *ngFor="let skill of skills">
+            <p>{{ skill.name }} - {{ skill.level }}%</p>
+            <div class="bar-bg">
+              <div class="bar-fill" [style.width.%]="skill.level"></div>
+            </div>
+          </div>
         </div>
-        <div class="col-9 nav-bars">
-            <a routerLink="/"><strong>Home</strong></a>
-            <a routerLink="/about"><strong>About</strong></a>
-            <a href="/skills"><strong>Skills</strong></a>
-            <a href="/project"><strong>Project</strong></a>
-            <a href="/internship"><strong>Internship</strong></a>
-            <a href="/certification"><strong>Certification</strong></a>
-        </div>
-        <div class="col-1 call-container">
-            <a [href]="'tel:' + phoneNumber" class="call-button" aria-label="Call">
-                <i class="phone-icon">📞</i><!-- Unicode Phone Symbol -->
-            </a>
-        </div>
+      </div>
     </div>
-    </div>
-</div>
-
-<!-- landing-page -->
-<div class="skills-page">
-<h1 class="skills-heading">🌐My Skills</h1>
-
-<div *ngFor="let skill of skills">
-  <p>{{ skill.name }} - {{ skill.level }}%</p>
-  <div class="bar-bg">
-    <div class="bar-fill" [style.width.%]="skill.level"></div>
   </div>
-</div>
 </div>

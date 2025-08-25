@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './project.scss'
 })
 export class Project {
-  phoneNumber: string = '7010443723';
-  
   onPlay() {
     console.log("Video started playing");
   }

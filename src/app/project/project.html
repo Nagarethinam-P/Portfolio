@@ -1,134 +1,127 @@
-<!-- header-page -->
-<div class="header-page">
-    <div class="container-fluid">
-    <div class="row">
-        <div class="col-2 center-content">
-            <img src="portfolio-logo-design.jpg" class="image" alt="Portfolio Logo">
-            <h1 class="portfolio-heading"><strong>Portfolio </strong></h1>
+<!-- project-page -->
+<div class="container">
+  <div class="row">
+    <div class="col-12 project-page">
+      <h1 class="project-heading">💻Project</h1>
+
+      <section id="portfolio">
+        <h2 class="port-heading"><strong>Portfolio Website</strong></h2>
+        <div class="port-content">
+          <h5 class="port-htag"><strong>Description:</strong></h5>
+          <p class="port-htag">A modern portfolio website built with Angular, featuring reusable components, router
+            navigation, and mobile-friendly design. Includes sections for About, Skills, Projects,
+            Internship, and Certificates with integrated GitHub and demo links.</p>
         </div>
-        <div class="col-9 nav-bars">
-            <a routerLink="/"><strong>Home</strong></a>
-            <a routerLink="/about"><strong>About</strong></a>
-            <a href="/skills"><strong>Skills</strong></a>
-            <a href="/project"><strong>Project</strong></a>
-            <a href="/internship"><strong>Internship</strong></a>
-            <a href="/certification"><strong>Certification</strong></a>
+        <div class="project-card">
+          <div class="buttons">
+            <a href="http://localhost:4200/project" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/Nagarethinam-P/Portfolio.git" target="_blank" class="btn">GitHub</a>
           </div>
-        <div class="col-1 call-container">
-            <a [href]="'tel:' + phoneNumber" class="call-button" aria-label="Call">
-                <i class="phone-icon">📞</i><!-- Unicode Phone Symbol -->
-            </a>
         </div>
-    </div>
-    </div>
-</div>
+      </section>
 
-
-
-<!-- landing page -->
-<div class="project-page">
-    <h1 class="project-heading">💻Project</h1>
-    <div class="project">
+      <div class="project">
         <h2><strong>Developing a Real-Time Data Analytics Framework using Hadoop</strong></h2>
-        <p><strong>Duration:</strong>Jan 2025 – Apr 2025</p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/Nagarethinam-P">View Project</a></p>
-        <h5> <strong>Project Overview</strong></h5>
-        <p>This project focuses on developing a real-time data analytics framework to monitor and 
-            filter unwanted messages in Online Social Networks (OSNs). The system combines big data 
-            technologies with machine learning to deliver fast, customizable, and scalable content 
+        <div class="ptag">
+          <p><strong>Duration:</strong>Jan 2025 – Apr 2025</p><br>
+          <h5> <strong>Project Overview</strong></h5>
+          <p>This project focuses on developing a real-time data analytics framework to monitor and
+            filter unwanted messages in Online Social Networks (OSNs). The system combines big data
+            technologies with machine learning to deliver fast, customizable, and scalable content
             moderation.</p>
-        <h5> <strong>Technologies Used </strong></h5>
-         <ul>
+          <h5> <strong>Technologies Used </strong></h5>
+          <ul>
             <li> <strong>Big Data: </strong> (HDFS, MapReduce, Hive)</li>
             <li> <strong>Backend: </strong>PHP</li>
             <li> <strong>Database: </strong>MySQL</li>
             <li> <strong>Web Server:</strong>Apache</li>
             <li> <strong>Machine Learning: </strong>Soft classifier (Supervised Learning, NLP)</li>
             <li> <strong>Platform: </strong>Windows 7 (Client-Server Architecture)</li>
-         </ul>
-         <h5><strong> Key features </strong></h5>
-         <ul>
-          <li>Developed a <strong>rule-based filtering engine</strong> block unwanted posts on social network user walls.</li>
-          <li>Integrated a <strong>learning soft classifier</strong> to auto-label and filter content based on user preferences.</li>
-          <li>Designed a <strong>user-controlled content moderation system </strong> for enhanced privacy and security.</li>
-          <li>Built web dashboards for configuration and visualization of filtering results.</li>
-          <li>Demonstrated efficient <strong>real-time data processing </strong> using Hadoop components.</li>
-        </ul>
-        <h5><strong>Future Enhancements:</strong></h5>
-        <ul>
-           <li>Incorporate <strong>online learning models </strong>with user feedback.</li>
-           <li>Add <strong>trust-based access control</strong>and<strong>auto-suggested filtering rules.</strong></li>
-           <li>Improve usability with a <strong>more intuitive GUI</strong>for managing filters and trust settings.</li>
-        </ul>
-    <h5><strong> Demo video </strong></h5>
-    <video #videoPlayer width="750" height="500" controls (play)="onPlay()" (pause)="onPause()" (ended)="onEnd()" class="video">
-        <source src="Project Demo video.mp4" type="video/mp4">
-      </video>
+          </ul>
+          <h5><strong> Key features </strong></h5>
+          <ul>
+            <li>Developed a <strong>rule-based filtering engine</strong> block unwanted posts on social network user
+              walls.</li>
+            <li>Integrated a <strong>learning soft classifier</strong> to auto-label and filter content based on user
+              preferences.</li>
+            <li>Designed a <strong>user-controlled content moderation system </strong> for enhanced privacy and
+              security.
+            </li>
+            <li>Built web dashboards for configuration and visualization of filtering results.</li>
+            <li>Demonstrated efficient <strong>real-time data processing </strong> using Hadoop components.</li>
+          </ul>
+          <h5><strong>Future Enhancements:</strong></h5>
+          <ul>
+            <li>Incorporate <strong>online learning models </strong>with user feedback.</li>
+            <li>Add <strong>trust-based access control</strong>and<strong>auto-suggested filtering rules.</strong></li>
+            <li>Improve usability with a <strong>more intuitive GUI</strong>for managing filters and trust settings.
+            </li>
+          </ul>
+        </div>
+        <h5 class="dv"><strong> Demo video </strong></h5>
+        <div class="demo">
+          <video id="videoPlayer" controls (play)="onPlay()" (pause)="onPause()" (ended)="onEnd()">
+            <source src="Project Demo video.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
 
+      <!-- naan mudhalvan -->
+      <h2 class="NM-title"><strong>Naan mudhalvan projects</strong></h2>
+      <h4>1. Extended Reality (XR)</h4>
+      <div class="nm-para">
+        <p><strong>Year:</strong> 2024–2025</p><br>
+        <p>
+          Developed immersive experiences using Augmented and Virtual Reality technologies.
+          Applied XR tools to create simulations for education and virtual training.
+        </p>
+      </div>
+      <div class="video-container">
 
+        <video height="400" controls controlsList="nodownload" [src]="selectedVideo"
+          oncontextmenu="return false;"></video>
 
-  <!-- naan mudhalvan -->
-  <h2 class="NM-title"><strong>Naan mudhalvan projects</strong></h2>
-  <h4>1. Extended Reality (XR)</h4>
-  <p><strong>Year:</strong> 2024–2025</p>
-  <p>
-      Developed immersive experiences using Augmented and Virtual Reality technologies. 
-      Applied XR tools to create simulations for education and virtual training.
-  </p>
-      
+        <div class="playlist">
+          <h3>Project Playlist</h3>
+          <ul>
+            <li *ngFor="let video of videos" (click)="selectVideo(video.url)"
+              [class.active]="selectedVideo === video.url">
+              ▶️ {{ video.title }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="nm-para">
+        <h4>2. Software Testing and Automation</h4>
+        <p><strong>Year:</strong> 2023–2024</p><br>
+        <p>
+          Executed test strategies including manual and automation testing.
+          Used Selenium for scripting and enhanced software reliability through QA workflows.
+        </p>
 
-    <!--naan mudhalvan video playlist video -->
-  <div class="video-container">
-  <!-- Video Player -->
-  <video
-    height="400"
-    controls
-    controlsList="nodownload"
-    [src]="selectedVideo"
-    oncontextmenu="return false;"
-  ></video>
+        <h4>3. IBM SkillsBuild: Naalayathiran</h4>
+        <p><strong>Year:</strong> 2023–2024</p><br>
+        <p>
+          Completed real-world tasks focused on career readiness, communication, and digital skills.
+          Designed mini-projects combining soft skills with technical modules on the IBM SkillsBuild platform.
+        </p>
 
-  <!-- Playlist Section -->
-  <div class="playlist">
-    <h3>Project Playlist</h3>
-    <ul>
-      <li
-        *ngFor="let video of videos"
-        (click)="selectVideo(video.url)"
-        [class.active]="selectedVideo === video.url"
-      >
-        ▶️ {{ video.title }}
-      </li>
-    </ul>
+        <h4>4. Network Essentials</h4>
+        <p><strong>Year:</strong> 2022–2023</p><br>
+        <p>
+          Built a basic network model with IP configurations and routing logic.
+          Understood core networking concepts and applied them through guided lab simulations.
+        </p>
+
+        <h4>5. Microsoft Office Fundamentals</h4>
+        <p><strong>Year:</strong> 2022–2023</p><br>
+        <p>
+          Created a productivity suite project using Microsoft Word, Excel, and PowerPoint.
+          Demonstrated formatting, formulas, and professional presentation techniques.
+        </p>
+      </div>
+    </div>
   </div>
-</div>
-<br>
-    <br><h4>2. Software Testing and Automation</h4>
-    <p><strong>Year:</strong> 2023–2024</p>
-    <p>
-      Executed test strategies including manual and automation testing. 
-      Used Selenium for scripting and enhanced software reliability through QA workflows.
-    </p>
-
-    <h4>3. IBM SkillsBuild: Naalayathiran</h4>
-    <p><strong>Year:</strong> 2023–2024</p>
-    <p>
-      Completed real-world tasks focused on career readiness, communication, and digital skills. 
-      Designed mini-projects combining soft skills with technical modules on the IBM SkillsBuild platform.
-    </p>
-
-    <h4>4. Network Essentials</h4>
-    <p><strong>Year:</strong> 2022–2023</p>
-    <p>
-      Built a basic network model with IP configurations and routing logic. 
-      Understood core networking concepts and applied them through guided lab simulations.
-    </p>
-
-    <h4>5. Microsoft Office Fundamentals</h4>
-    <p><strong>Year:</strong> 2022–2023</p>
-    <p>
-      Created a productivity suite project using Microsoft Word, Excel, and PowerPoint. 
-      Demonstrated formatting, formulas, and professional presentation techniques.
-    </p>
 </div>

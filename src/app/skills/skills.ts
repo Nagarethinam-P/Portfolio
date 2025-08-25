@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './skills.scss'
 })
 export class Skills {
-    phoneNumber: string = '7010443723';
     skills = [
       { name: 'HTML', level: 95 },
       { name: 'CSS', level: 90 },

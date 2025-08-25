@@ -1,0 +1,59 @@
+<!-- Desktop Header -->
+<div class="header-page ddview">
+  <div class="container">
+    <div class="row header-row">
+
+      <div class="col-2 logo">
+        <img src="portfolio-logo-design.jpg" class="image" alt="Portfolio Logo">
+        <h1 class="portfolio-heading"><strong>Portfolio</strong></h1>
+      </div>
+
+      <div class="col-8 nav-bars" [ngClass]="{'show': isMenuOpen}">
+        <a routerLink="/" (click)="closeMenu()"><strong>Home</strong></a>
+        <a routerLink="/about" (click)="closeMenu()"><strong>About</strong></a>
+        <a routerLink="/skills" (click)="closeMenu()"><strong>Skills</strong></a>
+        <a routerLink="/project" (click)="closeMenu()"><strong>Project</strong></a>
+        <a routerLink="/internship" (click)="closeMenu()"><strong>Internship</strong></a>
+        <a routerLink="/certification" (click)="closeMenu()"><strong>Certification</strong></a>
+      </div>
+
+      <div class="col-2 call-container">
+        <a [href]="'tel:' + phoneNumber" class="call-button" aria-label="Call">
+          <i class="phone-icon">📞</i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Header -->
+<div class="mbview">
+  <div class="container">
+    <div class="row header-row-1">
+
+      <div class="col logo-1">
+        <img src="portfolio-logo-design.jpg" class="image" alt="Portfolio Logo">
+        <h1 class="portfolio-heading"><strong>Portfolio</strong></h1>
+      </div>
+
+      <div class="col ham-btn">
+        <div class="hamburger" (click)="toggleMenu()">
+          &#9776;
+        </div>
+
+        <div class="nav-bars" [ngClass]="{'show': isMenuOpen}">
+          <a routerLink="/" (click)="closeMenu()"><strong>Home</strong></a>
+          <a routerLink="/about" (click)="closeMenu()"><strong>About</strong></a>
+          <a routerLink="/skills" (click)="closeMenu()"><strong>Skills</strong></a>
+          <a routerLink="/project" (click)="closeMenu()"><strong>Project</strong></a>
+          <a routerLink="/internship" (click)="closeMenu()"><strong>Internship</strong></a>
+          <a routerLink="/certification" (click)="closeMenu()"><strong>Certification</strong></a>
+
+          <a [href]="'tel:' + phoneNumber" class="call-button" (click)="closeMenu()" aria-label="Call">
+            📞 Call Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
