@@ -9,7 +9,7 @@
 
 h1 {
   color: black;
-   padding-top: 50px;
+   padding-top: 35px;
   display: flex;
   justify-content: center;
   height: auto;
@@ -48,7 +48,6 @@ h1 {
   font-family: 'Poppins', sans-serif;
   margin-left: 110px;
   margin-right: 110px;
-  //padding-top: 50px;
   color: #867e7e;
   font-size: larger;
 }
@@ -142,8 +141,6 @@ h1 {
   padding: 12px;
   border-left: 4px solid #4B0082;
   border-radius: 6px;
-  margin-left: 125px;
-  margin-right: 125px;
   margin-top: 30px;
   font-family: 'Poppins', sans-serif;
   flex: auto;
@@ -172,11 +169,11 @@ h3 {
 
 @media only screen and (min-width:600px) and (max-width:1200px) {
   .edu-item p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .edu-item h3 {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
@@ -196,7 +193,7 @@ h3 {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  min-height: 75vh;
+  padding-bottom: 20px;
   background: linear-gradient(to right, #e0c3fc, #8ec5fc);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
   height: auto;
@@ -231,10 +228,6 @@ h3 {
 }
 
 @media only screen and (min-width:600px) and (max-width:1200px) {
-  .contact-page {
-    padding: 15px;
-  }
-
   .contact-container {
     width: 100%;
     padding: 10px;
@@ -258,10 +251,6 @@ h3 {
 
 
 @media only screen and (max-width: 599px) {
-  .contact-page {
-    padding: 15px;
-  }
-
   .contact-container {
     width: 100%;
     padding: 10px;
