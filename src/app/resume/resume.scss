@@ -3,8 +3,12 @@
     padding: 30px;
     background: linear-gradient(to right, #e0c3fc, #8ec5fc);
     min-height: 100vh;
+    margin-top: 50px;
+    border-radius: 20px;
   }
-  
+  .header-page{
+    display: no;
+  }
   .resume-img {
     max-width: 90%;
     border-radius: 10px;
