@@ -20,7 +20,7 @@ export default `<!doctype html>
     
   </app-root>
   
-<script src="main-OMI4DEVU.js" type="module"></script></body>
+<script src="main-R42XFHZW.js" type="module"></script></body>
 </html>
 <script>
   AOS.init();
