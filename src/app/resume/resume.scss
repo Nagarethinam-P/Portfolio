@@ -1,32 +1,30 @@
 .resume-container {
-    text-align: center;
-    padding: 30px;
-    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
-    min-height: 100vh;
-    margin-top: 50px;
-    border-radius: 20px;
-  }
-  .header-page{
-    display: no;
-  }
-  .resume-img {
-    max-width: 90%;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .btn-download {
-    padding: 10px 25px;
-    border: none;
-    background-color: #6a1b9a;
-    color: white;
-    font-size: 16px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-download:hover {
-    background-color: #4a0072;
-  }
-  
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  min-height: 100vh;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.resume-img {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-download {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background-color: #6a1b9a;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #4a0072;
+}

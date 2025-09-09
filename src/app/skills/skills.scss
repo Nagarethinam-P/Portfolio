@@ -65,9 +65,10 @@
   }
 
   @media only screen and (min-width: 600px) and (max-width: 1200px) {
-    .skills-heading{
+    .skills-heading {
       font-size: 50px;
     }
+
     .bar-bg {
       width: 400px;
       height: 20px;
@@ -79,9 +80,10 @@
   }
 
   @media only screen and (max-width: 599px) {
-    .skills-heading{
+    .skills-heading {
       font-size: 40px;
     }
+
     .bar-bg {
       width: 250px;
       height: 20px;
@@ -92,7 +94,7 @@
     }
   }
 
- @keyframes fill {
+  @keyframes fill {
     from {
       width: 0;
     }

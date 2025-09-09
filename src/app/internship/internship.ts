@@ -10,8 +10,8 @@ export class Internship {
   internships = [
     {
       title: 'Full Stack Web Development Intern',
-      company: 'LetsifySigma4Solution, Karaikudi',
-      period: 'Apr 2025 – Present'
+      company: 'Letsify Sigma4Solution private limited, Karaikudi',
+      period: '3 Months(Feb 2025 – May 2025)'
     },
     {
       title: 'Python Programming Intern',
@@ -55,9 +55,9 @@ export class Internship {
 
   course = {
     title: 'Full Stack Web Development',
-    provider: 'LetsifySigma4Solution, Karaikudi',
+    provider: 'Letsify Sigma4Solution private limited, Karaikudi',
     status: 'Course',
-    duration: 'Apr 2025 – Present',
-    technologies: ['HTML', 'CSS','Bootstrap','JavaScript', 'Angular', 'MySQL', 'DotNET']
+    duration: '3 Months',
+    technologies: ['HTML', 'CSS','Bootstrap','JavaScript', 'Typescript','Angular', 'MySQL', 'c#(DotNET)']
   };
 }

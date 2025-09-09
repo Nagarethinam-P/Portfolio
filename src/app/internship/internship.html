@@ -1,49 +1,47 @@
 <!-- internship-->
-<div class="inter">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 internship-page">
-        <h1 class="internship-heading">💼 Internship / Course</h1>
-        <div class="timeline-section">
-          <h2>Internships</h2>
-          <div class="timeline-row">
-            <div class="timeline-item" *ngFor="let internship of internships; let i = index" [class.hidden]="i >= 3">
-              <div class="timeline-content">
-                <h3>{{ internship.title }}</h3>
-                <p><strong>Company:</strong> {{ internship.company }}</p>
-                <p><strong>Duration:</strong> {{ internship.period }}</p>
-              </div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 internship-page">
+      <h1 class="internship-heading">💼 Internship / Course</h1>
+      <div class="timeline-section">
+        <h2>Internships</h2>
+        <div class="timeline-row">
+          <div class="timeline-item" *ngFor="let internship of internships; let i = index" [class.hidden]="i >= 3">
+            <div class="timeline-content">
+              <h3>{{ internship.title }}</h3>
+              <p><strong>Company:</strong> {{ internship.company }}</p>
+              <p><strong>Duration:</strong> {{ internship.period }}</p>
             </div>
           </div>
         </div>
       </div>
-      <hr>
+    </div>
+    <hr>
 
-      <!-- course -->
-      <div class="col-12 fullstack-container">
-        <h2>Full Stack Web Development Course</h2>
-        <div class="fullstack-card">
-          <h3>{{ course.title }}</h3>
-          <p><strong>Provider:</strong> {{ course.provider }}</p>
-          <p><strong>Status:</strong> {{ course.status }}</p>
-          <p><strong>Duration:</strong> {{ course.duration }}</p>
-          <p><strong>Technologies:</strong> {{ course.technologies.join(', ') }}</p>
-        </div>
+    <!-- course -->
+    <div class="col-12 fullstack-container">
+      <h2>Full Stack Web Development Course</h2>
+      <div class="fullstack-card">
+        <h3>{{ course.title }}</h3>
+        <p><strong>Provider:</strong> {{ course.provider }}</p>
+        <p><strong>Status:</strong> {{ course.status }}</p>
+        <p><strong>Duration:</strong> {{ course.duration }}</p>
+        <p><strong>Technologies:</strong> {{ course.technologies.join(', ') }}</p>
       </div>
-      <hr>
+    </div>
+    <hr>
 
-      <!-- naan mudhalvan courses -->
-      <div class="col-12 nm-page">
-        <div class="timeline-section">
-          <h2>Naan Mudhalvan Courses</h2>
-          <div class="timeline-vertical">
-            <div class="timeline-item-vertical animate-item" *ngFor="let course of courses">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <h3>{{ course.title }}</h3>
-                <p><strong>Provider:</strong> {{ course.provider }}</p>
-                <p><strong>Year:</strong> {{ course.year }}</p>
-              </div>
+    <!-- naan mudhalvan courses -->
+    <div class="col-12 nm-page">
+      <div class="timeline-section">
+        <h2>Naan Mudhalvan Courses</h2>
+        <div class="timeline-vertical">
+          <div class="timeline-item-vertical animate-item" *ngFor="let course of courses">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>{{ course.title }}</h3>
+              <p><strong>Provider:</strong> {{ course.provider }}</p>
+              <p><strong>Year:</strong> {{ course.year }}</p>
             </div>
           </div>
         </div>

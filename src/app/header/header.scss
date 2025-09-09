@@ -1,12 +1,12 @@
 @media only screen and (min-width: 1200px) {
   .ddview {
     margin: 0;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #e0c3fc, #8ec5fc);
     padding: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
   .header-row {
@@ -65,7 +65,7 @@
     align-items: center;
     gap: 10px;
 
-}
+  }
 
   .call-button {
     width: 50px;
@@ -77,11 +77,11 @@
     align-items: center;
     font-size: 22px;
     text-decoration: none;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
     color: white;
-  
-}
+
+  }
 
   .call-button:hover {
     background-color: #218838;
@@ -95,12 +95,12 @@
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
   .mbview {
     margin: 0;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #e0c3fc, #8ec5fc);
     padding: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
   .header-row {
@@ -112,15 +112,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-     height: 50px;
-    //justify-content: center;
-   // padding: 5px 10px;
-    //background-color: #B57EDC;
-    //border: 2px solid #734F96;
-    //border-radius: 50px;
-   //width: auto;
-    //margin-left: 50px;
-    //margin-top: 5px;
+    height: 50px;
   }
 
   .image {
@@ -182,13 +174,14 @@
   .nav-bars.show {
     display: flex;
   }
+
   .call-container {
     position: absolute;
     right: 15px;
     top: 12px;
   }
 
-.nav-bars .call-button {
+  .nav-bars .call-button {
     display: block;
     width: 100%;
     text-align: center;
@@ -202,8 +195,8 @@
     transition: background 0.3s;
   }
 
- .nav-bars .call-button:hover {
-  background-color: #218838;
+  .nav-bars .call-button:hover {
+    background-color: #218838;
   }
 
   .ddview {
@@ -219,16 +212,11 @@
     padding: 12px 15px;
     background: linear-gradient(to right, #e0c3fc, #8ec5fc);
   }
-  
+
   .logo-1 {
     display: flex;
     align-items: center;
     height: 50px;
-    //gap: 10px;
-   // padding: 5px 10px;
-    // background-color: #B57EDC;
-    // border: 2px solid #734F96;
-    // border-radius: 50px;
   }
 
   .image {
@@ -250,7 +238,7 @@
     z-index: 1001;
     position: absolute;
     top: 15px;
-    right: 50px;   
+    right: 50px;
   }
 
   .nav-bars {
@@ -263,7 +251,7 @@
     flex-direction: column;
     border-radius: 8px;
     padding: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 999;
   }
 
@@ -295,26 +283,24 @@
   }
 
   .nav-bars .call-button {
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 12px;
-        margin-top: 10px;
-        border-radius: 8px;
-        background-color: #28a745;
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-        transition: background 0.3s;
-      }
-    
-      .nav-bars .call-button:hover {
-        background-color: #218838;
-      }
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
 
-   .ddview {
+  .nav-bars .call-button:hover {
+    background-color: #218838;
+  }
+
+  .ddview {
     display: none;
   }
 }
-
-

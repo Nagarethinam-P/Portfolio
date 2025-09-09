@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
   standalone: false,
   templateUrl: './home.html',
   styleUrl: './home.scss',
-  encapsulation: ViewEncapsulation.None // Ensures CSS applies globally
+  encapsulation: ViewEncapsulation.None 
 })
 export class Home {
  constructor(private router: Router) {}

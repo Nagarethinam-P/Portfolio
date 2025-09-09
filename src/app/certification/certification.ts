@@ -9,6 +9,13 @@ import { Component } from '@angular/core';
 export class Certification {
   certificatesRow1 = [
     {
+      title:'Full-stack web development',
+      provider: 'Letsify Sigma4Solutions private limited',
+      year: '2025',
+      imageUrl: 'full-stack cer.jpg',
+      downloadLink: 'full-stack cer.jpg'
+    },
+    {
       title:'Python Programming',
       provider: 'Phoenix Softtech',
       year: '2025',
