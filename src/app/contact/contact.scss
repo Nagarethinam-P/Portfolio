@@ -1,0 +1,115 @@
+.contact-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    height: auto;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+.contact-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin: 15px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #320c57;
+}
+
+/* Form Styles */
+.contact-form {
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+
+    .btn-submit {
+        background-color: #4B0082;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .btn-submit:hover {
+        background-color: #320c57;
+    }
+}
+
+
+@media only screen and (min-width:600px) and (max-width:1200px) {
+    .contact-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-info {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .contact-info a {
+        word-break: break-word;
+        font-size: 14px;
+    }
+
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 599px) {
+    .contact-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-info {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .contact-info a {
+        word-break: break-word;
+        font-size: 14px;
+    }
+
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+}

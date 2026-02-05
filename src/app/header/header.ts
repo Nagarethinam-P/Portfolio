@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class Header {
   isMenuOpen = false;
-  phoneNumber: string = "7010443723"; 
+  phoneNumber: string = "7010443723";
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -16,5 +16,13 @@ export class Header {
 
   closeMenu() {
     this.isMenuOpen = false;
+  }
+
+  scrollToSection(sectionId: string) {
+    this.closeMenu();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

@@ -14,19 +14,19 @@ import { Resume } from './resume/resume';
 
 
 const routes: Routes = [
-  { path:'',component:Home},
-  { path:'about',component:About},
-  
-  {path:'skills',component:Skills},
-  {path:'project',component:Project},
-  {path:'internship',component:Internship},
-  {path:'certification',component:Certification},
- 
-  { path: 'resume', component:Resume},
+  // SPA Mode: All sections are on the home page.
+  // Resume might still be a separate page.
+  { path: 'resume', component: Resume },
+  // Wildcard redirect to home
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+    }),
+  ],
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }

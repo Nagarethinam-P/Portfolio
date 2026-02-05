@@ -1,12 +1,13 @@
 <!-- landing page -->
 <div class="container">
   <div class="row">
-    <div class="col-12 cert-page">
+    <div class="col-12 cert-page" data-aos="fade-up">
       <h1 class="cert-heading">🏅Certification</h1>
 
-      <h2>Internship Certificates</h2>
+      <h2 data-aos="fade-right">Internship Certificates</h2>
       <div class="certificate-row row-1">
-        <div class="certificate-card" *ngFor="let cert of certificatesRow1">
+        <div class="certificate-card" *ngFor="let cert of certificatesRow1; let i = index" [attr.data-aos]="'zoom-in'"
+          [attr.data-aos-delay]="i * 100">
           <img [src]="cert.imageUrl" alt="{{ cert.title }}" class="cert-image" />
           <div class="cert-content">
             <h3>{{ cert.title }}</h3>
@@ -19,9 +20,10 @@
       </div>
       <hr>
 
-      <h2>Naan mudhalvan certificates</h2>
+      <h2 data-aos="fade-right">Naan mudhalvan certificates</h2>
       <div class="certificate-row row-2">
-        <div class="certificate-card" *ngFor="let cert of certificatesRow2">
+        <div class="certificate-card" *ngFor="let cert of certificatesRow2; let i = index" [attr.data-aos]="'zoom-in'"
+          [attr.data-aos-delay]="i * 100">
           <img [src]="cert.imageUrl" alt="{{ cert.title }}" class="cert-image" />
           <div class="cert-content">
             <h3>{{ cert.title }}</h3>
