@@ -1,11 +1,31 @@
 .landing-page {
+    position: relative;
     color: white;
-    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    /* Use a dark background instead of transparent so there's no white flash while the video loads */
+    background-color: #1a1a1a;
+    z-index: 1; /* Forces the video to render ABOVE the container's background color */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
     height: auto;
     margin-top: 25px;
     border-radius: 20px;
     padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px) brightness(0.5); /* slightly darker and less blurred for visibility */
+    z-index: -1;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 10;
 }
 
 .heading {

@@ -4,12 +4,11 @@
       <h1 class="skills-heading">🌐My Skills</h1>
       <div class="skills">
         <div class="s">
-          <div *ngFor="let skill of skills; let i = index" [attr.data-aos]="'fade-right'"
-            [attr.data-aos-delay]="i * 100">
+          <div *ngFor="let skill of skills; let i = index">
             <p>{{ skill.name }} - {{ skill.level }}%</p>
             <div class="bar-bg">
               <div class="bar-fill" [style.width.%]="skill.level" [attr.data-aos]="'slide-right'"
-                [attr.data-aos-delay]="i * 100 + 200"></div>
+                [attr.data-aos-delay]="i * 100"></div>
             </div>
           </div>
         </div>
