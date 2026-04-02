@@ -1,12 +1,13 @@
 <!-- internship-->
 <div class="container">
   <div class="row">
-    <div class="col-12 internship-page">
+    <div class="col-12 internship-page" data-aos="fade-up">
       <h1 class="internship-heading">💼 Internship / Course</h1>
       <div class="timeline-section">
-        <h2>Internships</h2>
+        <h2 data-aos="fade-right">Internships</h2>
         <div class="timeline-row">
-          <div class="timeline-item" *ngFor="let internship of internships; let i = index" [class.hidden]="i >= 3">
+          <div class="timeline-item" *ngFor="let internship of internships; let i = index" [class.hidden]="i >= 3"
+            [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 100">
             <div class="timeline-content">
               <h3>{{ internship.title }}</h3>
               <p><strong>Company:</strong> {{ internship.company }}</p>
@@ -19,9 +20,9 @@
     <hr>
 
     <!-- course -->
-    <div class="col-12 fullstack-container">
-      <h2>Full Stack Web Development Course</h2>
-      <div class="fullstack-card">
+    <div class="col-12 fullstack-container" data-aos="fade-up">
+      <h2 data-aos="fade-right">Full Stack Web Development Course</h2>
+      <div class="fullstack-card" data-aos="zoom-in" data-aos-delay="100">
         <h3>{{ course.title }}</h3>
         <p><strong>Provider:</strong> {{ course.provider }}</p>
         <p><strong>Status:</strong> {{ course.status }}</p>
@@ -32,11 +33,12 @@
     <hr>
 
     <!-- naan mudhalvan courses -->
-    <div class="col-12 nm-page">
+    <div class="col-12 nm-page" data-aos="fade-up">
       <div class="timeline-section">
-        <h2>Naan Mudhalvan Courses</h2>
+        <h2 data-aos="fade-right">Naan Mudhalvan Courses</h2>
         <div class="timeline-vertical">
-          <div class="timeline-item-vertical animate-item" *ngFor="let course of courses">
+          <div class="timeline-item-vertical animate-item" *ngFor="let course of courses; let i = index"
+            [attr.data-aos]="'fade-left'" [attr.data-aos-delay]="i * 100">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <h3>{{ course.title }}</h3>

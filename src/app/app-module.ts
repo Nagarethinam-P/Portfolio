@@ -1,5 +1,7 @@
 import { NgModule, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from '@angular/core';
 import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { provideHttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
@@ -13,6 +15,7 @@ import { Certification } from './certification/certification';
 
 import { Resume } from './resume/resume';
 import { Header } from './header/header';
+import { Contact } from './contact/contact';
 
 
 
@@ -21,23 +24,27 @@ import { Header } from './header/header';
     App,
     About,
     Home,
-  
+
     Skills,
     Project,
     Internship,
     Certification,
-    
+
     Resume,
-          Header
+    Header,
+    Contact
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
-    provideClientHydration(withEventReplay())
+    provideClientHydration(withEventReplay()),
+    provideHttpClient()
   ],
   bootstrap: [App]
 })

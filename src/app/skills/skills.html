@@ -1,13 +1,15 @@
 <div class="container">
   <div class="row">
-    <div class="col-12 skills-page">
+    <div class="col-12 skills-page" data-aos="fade-up">
       <h1 class="skills-heading">🌐My Skills</h1>
       <div class="skills">
         <div class="s">
-          <div *ngFor="let skill of skills">
+          <div *ngFor="let skill of skills; let i = index" [attr.data-aos]="'fade-right'"
+            [attr.data-aos-delay]="i * 100">
             <p>{{ skill.name }} - {{ skill.level }}%</p>
             <div class="bar-bg">
-              <div class="bar-fill" [style.width.%]="skill.level"></div>
+              <div class="bar-fill" [style.width.%]="skill.level" [attr.data-aos]="'slide-right'"
+                [attr.data-aos-delay]="i * 100 + 200"></div>
             </div>
           </div>
         </div>

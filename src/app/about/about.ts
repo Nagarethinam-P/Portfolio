@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './about.scss'
 })
 export class About {
- email = "nagarethinamp68@gmail.com";
+
 }

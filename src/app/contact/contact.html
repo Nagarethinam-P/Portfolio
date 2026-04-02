@@ -1,0 +1,61 @@
+<div class="col-12 contact-page" data-aos="fade-up">
+    <h1>📞Contact</h1>
+    <div class="contact-container" data-aos="fade-right">
+        <h2>Contact Me</h2>
+
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+            <p><strong>📞 Mobile:</strong>
+                <a href="tel:+917010443723">+91 7010443723</a>
+            </p>
+        </div>
+
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+            <p><strong>📧 Email:</strong>
+                <a [href]="'mailto:' + email">{{ email }}</a>
+            </p>
+        </div>
+
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
+            <p><strong>🔗 LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/nagarethinam-p/" target="_blank">
+                    https://www.linkedin.com/in/nagarethinam-p/
+                </a>
+            </p>
+        </div>
+
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="400">
+            <p><strong>💻 GitHub:</strong>
+                <a href="https://github.com/Nagarethinam-P" target="_blank">
+                    https://github.com/Nagarethinam-P
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="contact-container mt-4" data-aos="fade-up">
+        <h2>Send a Message</h2>
+        <form class="contact-form" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" placeholder="Your Name" required [(ngModel)]="formData.name"
+                        name="name">
+                </div>
+                <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" placeholder="Your Email" required
+                        [(ngModel)]="formData.email" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject" required [(ngModel)]="formData.subject"
+                    name="subject">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="5" placeholder="Message" required [(ngModel)]="formData.message"
+                    name="message"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+</div>
